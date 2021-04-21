@@ -8,7 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'SwiftUTI'
-  s.version          = '1.0.7'
+  s.version          = '2.0.2'
+  s.swift_version    = '5.0'
   s.summary          = 'A swift wrapper around Apples Universal Type Identifier functions.'
 
 # This description is used to generate tags and improve search results.
@@ -24,26 +25,16 @@ Pod::Spec.new do |s|
                        DESC
 
   s.homepage         = 'https://github.com/mkeiser/SwiftUTI'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'mkeiser' => 'matthias@tristan-inc.com' }
   s.source           = { :git => 'https://github.com/mkeiser/SwiftUTI.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.watchos.deployment_target = '2.0'
   s.ios.deployment_target = '8.0'
   s.osx.deployment_target = '10.10'
 
-  s.source_files = 'Sources/*'
+  s.source_files = 'Sources/SwiftUTI/*'
 
   s.osx.framework = 'CoreServices'
   s.ios.framework = 'MobileCoreServices'
-
-  # s.resource_bundles = {
-  #   'SwiftUTI' => ['SwiftUTI/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
